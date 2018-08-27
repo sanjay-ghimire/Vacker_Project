@@ -1,0 +1,419 @@
+body{
+
+	background-color: lightgrey;
+	color: #333;
+	font-family: calibri;
+}
+
+a{
+	text-decoration: none;
+	color: green;
+}
+
+a:hover{
+
+	color: green;
+}
+
+img{
+
+	max-width: 100%;
+}
+ul,.dropdown{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1,h2,h3{
+	color: green;
+}
+h4,p{
+	color: grey;
+}
+h1:hover,h2:hover,h3:hover{
+	color: darkgreen;
+}
+#menubar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+/* nav style here*/
+#nav{
+	background-color:white;
+	overflow: hidden;
+}
+#nav ul{
+	margin-left: 30%;
+	text-align: center;
+}
+#nav li{
+	display: inline-block;
+	float: left;
+    border-right: 1px solid #bbb;
+    padding: 14px 10px;
+}
+#nav li:last-child {
+    border-right: none;
+}
+#nav li a{
+	color: grey;
+	display: block;
+    text-align: center;  
+}
+nav a img{
+	width:150px;
+	height:40px;
+	float: left;
+	margin-left: 8%; 
+	margin-top: 5px;
+}
+
+/* header style here*/
+#header{
+	background-color: #d2c416;
+}
+#header ul{
+	list-style-type: none;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+}
+#header li {
+	display: inline-block;
+	float: left;
+    padding: 10px 14px;
+}
+#header li a{
+	color: black;
+	display: block;
+	text-align: center;
+}
+#header li:hover,.dropdown-content{
+	border-top: 4px solid green;
+    /*text-decoration: none;*/
+}
+#header li a:hover{
+	color: green;
+}
+
+/*search icon and its toggle style here*/
+#search-img{
+	display: inline-block;
+	color: black;
+	font-size: 20px;
+	padding: 14px 16px;
+}
+#search-img:hover{
+	color: green;
+}
+form input[type=text] {
+    padding:10px;
+    font-size: 17px;
+    border: 2px solid blue;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+}
+form button {
+    float: left;
+    padding: 10px;
+    background: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 17px;
+    border-left: none;
+    cursor: pointer;  
+}
+@media only screen and (max-width: 850px)
+#searchbox {
+    margin: 75px 0 0 0;
+}
+form{
+	display: none;
+	padding-right: 5em;
+	position: fixed;
+    right: 0;
+    top: 17.5%;
+    z-index: 1;
+}
+form button:hover {
+	border: 1px solid green;
+    background: green;
+}
+form ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*hidden bar icon style here*/
+@media only screen and (max-width: 230px)
+.my-icon{
+	
+	diplay: visible;
+}
+.my-icon{
+	color: crimson;
+	font-size: 2.5em;
+	float: right;
+	margin-right: 2%;
+	display: none;
+}
+
+/*dropdown style*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+   	display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content>a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content>a:hover {
+	background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*social icon of top menu style here*/
+.social-icon{
+	margin-right: 5%;
+	font-size: 30px;
+
+}
+.social-icon i{
+	/*width: 10px;
+	height: 10px;*/
+	/*display: inline-block;
+	color: white;*/
+	padding: 10px;
+	float: right;
+	/*margin: .25%;*/
+	color: green;	
+}
+.social-icon i:hover, .social-icon-butom i:hover{
+	color: lightgreen;	
+}
+
+/*below menu div style here*/
+#wrapper{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+#image-div{
+	margin-top: 0;
+	background-color: green;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 18px;
+	background-image: url(../vacker/backereng.png),url(../vacker/vackereng-left.png);
+	background-size: 220px, 200px;
+	background-repeat: no-repeat;
+	background-position: 720px -80px, 220px -80px;
+}
+#image-div h1{
+	font-weight: bold;
+	color: white;
+}
+
+/*below image-div style here*/
+#below-img-div h4{
+	padding: 10px;
+	text-align: center;
+	color:black;
+}
+#below-img-div h4 a{
+	color:red;
+}
+#below-img-div h4 a:hover{
+	color: green;
+
+}
+
+
+/* left side 3 floating icon sytle here*/
+.Enquery{
+	margin: 8px 0;
+	list-style-type: none;
+	width: 55px;
+	height:43px;
+	border: 3px solid green;
+	font-size:40px;
+	background-color: green;
+}
+.Enquery a{
+	padding: 3px;
+	color:yellow;
+	width: 45px;
+    height: 116px;
+	margin-top: 1em;	    
+}
+@media only screen and (max-width: 850px)
+.FixedRight {
+    margin: 75px 0 0 0;
+}
+.FixedRight {
+    position: fixed; 
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+
+/*buttom fixed division style */
+@media only screen and (max-width: 1000px)
+.ButtomRight {
+    margin: 75px 0 0 0;
+}
+.ButtomRight {
+	position: fixed;    
+    border-radius: 8px 8px 0 0;
+    left:80%;
+    top: 95%;
+    z-index: 1;
+	background-color: rgb(50,160,200,50);
+	font-size:27px;
+	background outline-width: 50px;
+}
+.ButtonRight li,a{
+	color: white;
+}
+
+/*up arrow style here newly added*/
+.uparrow{
+	overflow: hidden;
+	position: fixed;
+	right:5%;
+    top: 93.5%;
+    z-index: 1;
+	margin: 8px 0;
+	list-style-type: none;
+	width: 55px;
+	height:42px;
+	font-size:40px;
+	background-color: green;
+	border-radius: 0 8px 0 0;
+	display: block;
+}
+.uparrow>i{
+	color: white;
+	margin-left: 0.3em;
+}
+
+
+/*topmost div style here*/
+#topmost{
+
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 2em;
+	color: grey;
+	font-size: 20px;
+	margin-bottom: 1.2em;
+}
+#topmost>p>a{
+
+	color: green;
+	text-decoration-style: bold;
+	font-size: 1.2em;
+
+}
+#topmost>#contact>li>a{
+	color: green;
+}
+#address{
+	padding:1.5em;
+	font-family: monospace
+}
+#contact{
+	padding: 1.5em;
+}
+#contact>li>a{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/*second id style starts here*/
+#second{
+	width: 100%;
+	background-color: white;
+	display: inline-block;
+	justify-content: center;	
+}
+#second #left{
+	
+	float: left;
+	width: 35%;	
+	padding: 2% 5%;
+	/*border: 3px solid red;*/
+}
+#second #centered{
+	display: block;
+	padding: 5%;
+	float: left;
+	width: 20%;
+	text-align: center;
+	/*border: 3px solid red;*/
+}
+/*buttom social icon*/
+.social-icon-buttom i{
+	display: inline-block;	
+	font-size: 30px;
+	padding: 10px;
+	color: green;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+}
+.social-icon-buttom i:hover{
+	color: lightgreen;
+}
+#second #right{
+	margin-top: 35px;
+	margin-left: 5%;
+}
+#second #right li{
+
+	padding: 5px;
+}
+#second section a{
+	color: grey;
+}
+#second #below{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 0 3em;
+}
+
+/*Its footer style*/
+footer{
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding-top: 15px;
+	margin-bottom: 0px;
+	clear: both;
+}

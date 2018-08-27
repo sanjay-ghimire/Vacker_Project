@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menu fixed</title>
+	<style type="text/css">
+	body{
+		background:grey;
+	}
+		
+		#menu-top{
+
+			border:1px solid red;
+			float:left;
+			width:100%;
+			background-color: black;
+			padding-bottom: 2px;
+			margin-bottom: 5px;
+			position: fixed;
+
+		}
+
+		#menu-below{
+
+			border:1px solid red;
+			float:left;
+			width:100%;
+			background-color: black;
+			/*position: fixed;*/
+		}
+		ul{
+
+			list-style-type: none;	
+		}
+		li{
+		display: inline;
+		padding:5px;
+		color: white;
+		}
+
+		li a{
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+
+</head>
+<body >
+	<div id="menu-top">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			
+		</ul>
+	</div>
+	<div id="menu-below">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+		</ul>
+	</div>
+	<div id="body-container">
+	<h1>THEMES/UI</h1>
+<p>Windows: Added support for Windows 10 (and 8.1) per-monitor DPI scaling
+Improved overall High DPI support
+Added support for 8k monitors and 300% DPI scale
+Themes can now provide @3x versions of images for very high DPI monitors
+Improved indent guide positions when using line padding
+Rulers are drawn with stippled lines
+Linux/Windows: Improved High DPI minimap rendering
+Mac: Fixed occasional yellow or black windows when using a theme with a colored title bar
+Mac: Double-clicking a themed title bar now performs the default system action
+Mac: Fixed sizing of some dialog windows when a theme uses a themed title bar
+Mac: Fixed gutter icons sometimes not drawing</p>
+<h1>TEXT RENDERING</h1>
+<p>Added ligature support for symbols
+Added font_options for controlling ligatures and stylistic sets
+Improved rendering and selection of emojis
+Tab width is now properly measured for proportional fonts
+Windows: DirectWrite is now used by default for all fonts
+Windows: Support gray_antialias in conjunction with DirectWrite
+Windows: improved DirectWrite anti-aliasing, adding support for system ClearType tuning</p>
+<h1>GOTO DEFINITION</h1>
+<p>Added Goto References when hovering over a symbol
+Added goto_reference command to the Goto menu</p>
+<h1>COLOR SCHEMES</h1>
+Added new color scheme format, .sublime-color-scheme
+Add Hashed Syntax Highlighting
+Added the Celeste color scheme to showcase hashed syntax highlighting
+Selections now render by default with true rounded corners
+Added color scheme settings for selection border width, corner style and radius
+Selection background and border now support alpha channels
+Improved color scheme reloading
+Added Convert Color Scheme command
+Added support for the invisibles key in color schemes
+selection_foreground can now be specified on a per-scope basis
+Color Schemes can specify bold and italic in the brackets_options key
+Improved handling of invalid.deprecated scopes in default color schemes
+<h1>SYNTAX HIGHLIGHTING</h1>
+Add embed action to .sublime-syntax files for improved syntax nesting
+Added Git Formats package for Git config files and use as core.editor, with thanks to Ryan Boehning and deathaxe
+Many syntax highlighting improvements, including significant improvements to:
+JavaScript, with thanks to Thomas Smith
+ShellScript, with thanks to Raoul Wols
+Makefiles, with thanks to Raoul Wols
+Java, with thanks to lastsecondsave
+C#, with thanks to keith-hall
+Markdown, with thanks to keith-hall
+Python, with thanks to FichteFoll
+Added stand alone syntax test runner for Linux, allowing for CI testing
+Various syntax definition errors now include the file name in the message
+<h1>COMMAND PALETTE</h1>
+New Command Palette implementation that can accept text input from users
+Fuzzy matching can match terms out of order by space separating them
+Added new commands Arithmetic, Rename File and View Package File to showcase new features
+Keyboard shortcut hints are no longer cut off at 15 characters
+<h1>BUILD SYSTEMS</h1>
+Improve cancellation handling
+Use /usr/bin/env to locate bash
+Fix multi-byte encodings sometimes triggering decoding errors
+Improved exec build target handling of killing child processes
+
+</div>
+</body>
+</html>
